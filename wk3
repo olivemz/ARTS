@@ -1,0 +1,3 @@
+###tips
+https://stackoverflow.com/questions/7669906/how-to-execute-php-block-from-terminal-without-saving-to-a-file
+use php -a to write testing script.
