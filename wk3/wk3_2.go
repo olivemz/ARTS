@@ -64,7 +64,14 @@ var romArray = []Roman{
 
 func intToRoman(num int) string {
 	result := ""
-
+	currentNum := num
+	for _, roman := range romArray {
+		intRepeat := currentNum/roman.val
+		currentNum = currentNum % roman.val
+		for i:=0 ; i < intRepeat; i++ {
+			result += roman.rom
+		}
+	}
 	return result
 }
 
