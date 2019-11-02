@@ -5,7 +5,7 @@
 ## Review
 ### docker 源码分析 前五章
 [main structure](docker-image.png)
-主要介绍了docker的价格 docker client, docker daemon. Docker Daemon 中 主要核心功能为 docker server 和 New Daemon.\
+主要介绍了docker的价构 docker client, docker daemon. Docker Daemon 中 主要核心功能为 docker server 和 New Daemon.\
 New Daemon 中创建了daemon所需要的网络和镜像的配置，以及驱动。
 server 则是基于api结构的高并发设计（得利于golang的高并发支持）。
 
