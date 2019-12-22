@@ -1,11 +1,11 @@
-##Review
-###Centrifuge: a reliable system for delivering billions of events per day
+## Review
+### Centrifuge: a reliable system for delivering billions of events per day
 https://segment.com/blog/introducing-centrifuge/ \
 An introduce to a fullly distributed job scheduler that built by segment. And it analytics the different approaches.
 ```
 The problem with using any sort of queue is that you are fundamentally limited in terms of how you access data. After all, a queue only supports two operations (push and pop).
 ```
-###Queue approach to resolve this issue
+### Queue approach to resolve this issue
 1. A single queue
 backpressure issue.
 2. queues per desitnation
@@ -18,7 +18,7 @@ Either of above approaches are not ideal.
 3. queue per source and destination
 end up with a lot queue to manage
 
-###Getting to virtual queues
+### Getting to virtual queues
 1. maintain thousands of little queues. And among these queues, easilily decide to consume messages at different rates from customers A, B, C.
 2. Allow to reorder message
 3. evenly distribute the workload between different workers.
