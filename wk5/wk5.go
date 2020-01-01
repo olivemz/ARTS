@@ -20,7 +20,7 @@ func threeSum(nums []int) [][]int {
 	curMaxIndex := len(nums) - 1
 	remainVal := 0
 	j := curMaxIndex
-	for i := 0; i < curMaxIndex-1 && i < j; i++ {
+	for i := 0; i < curMaxIndex-1; i++ {
 		if i < curMaxIndex-1 && nums[i+1] == nums[i] {
 			continue
 		}
