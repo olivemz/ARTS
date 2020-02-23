@@ -26,14 +26,12 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 		return nil
 	}
 	modifiedNode := i - n
-	fmt.Println("modify cation node", modifiedNode)
 
 	modified := head
 	prev := head
 	j := 0
 	for modified != nil {
 		if j == modifiedNode {
-			fmt.Println("matched current value", modified.Val)
 			if j == 0 {
 				return head.Next
 			} else {
